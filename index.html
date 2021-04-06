@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Temporizador</title>
+</head>
+<body>
+    <h1 class="titulo">Temporizador</h1>
+    <div class="imagen">
+        <img id="img-work" src="./assets/img/work.jpg">
+        <img id="img-break" src="./assets/img/break.png">
+    </div>
+    <div class="temporizador">
+        <h2 class="minutos">00</h2>
+        <h2 style="display: inline-block;">:</h2>
+        <h2 class="segundos">00</h2>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Número de rondas:" class="rondas input">
+        <input type="text" placeholder="Tiempo de descanso: " class="time-break input">
+        <input type="text" placeholder="Tiempo de trabajo:" class="time-work input">
+    </div>
+    <div style="width: 100%; margin-top: 10px;">
+        <button id="btn-comenzar" class="button comenzar">Comenzar</button>
+        <button id="btn-pausar" class="button pausar">Pausar</button>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
